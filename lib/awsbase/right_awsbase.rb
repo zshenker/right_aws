@@ -668,7 +668,9 @@ module RightAws
       :no_device                 => 'NoDevice',
       :ebs_snapshot_id           => 'Ebs.SnapshotId',
       :ebs_volume_size           => 'Ebs.VolumeSize',
-      :ebs_delete_on_termination => 'Ebs.DeleteOnTermination' }
+      :ebs_delete_on_termination => 'Ebs.DeleteOnTermination',
+      :ebs_volume_type           => 'Ebs.VolumeType',
+      :ebs_iops                  => 'Ebs.Iops' }
 
     def amazonize_block_device_mappings(block_device_mappings, key = 'BlockDeviceMapping') # :nodoc:
       result = {}
