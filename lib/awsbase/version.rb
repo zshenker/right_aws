@@ -4,7 +4,7 @@ module RightAws #:nodoc:
     MINOR = 1  unless defined?(MINOR)
     TINY  = 0  unless defined?(TINY)
     VENDOR = 'zencoder' unless defined?(VENDOR)
-    VENDOR_NUM = 1 unless defined?(VENDOR_NUM)
+    VENDOR_NUM = 2 unless defined?(VENDOR_NUM)
 
     STRING = [MAJOR, MINOR, TINY, VENDOR, VENDOR_NUM].join('.') unless defined?(STRING)
   end

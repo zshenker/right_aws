@@ -235,7 +235,7 @@ module RightAws
         :group_names           => { :amazonize_list => 'LaunchSpecification.SecurityGroup'},
         :group_ids             => { :amazonize_list => 'LaunchSpecification.SecurityGroupId'},
         :block_device_mappings => { :amazonize_bdm  => 'LaunchSpecification.BlockDeviceMapping'})
-      link = generate_request("RequestSpotInstances", request_hash)
+      link = generate_request("RequestSpotInstances", request_hash, :api_version => '2012-07-20')
       request_info(link, QEc2DescribeSpotInstanceParser.new(:logger => @logger))
     end
 
